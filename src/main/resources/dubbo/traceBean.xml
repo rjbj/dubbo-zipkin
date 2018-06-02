@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
           http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="sender" class="zipkin2.reporter.beans.OkHttpSenderFactoryBean">
-        <property name="endpoint" value="http://10.10.10.61:9411/api/v2/spans"/>
+        <property name="endpoint" value="http://zipkin.360haoyao.com/api/v2/spans"/>
     </bean>
 
     <bean id="tracing" class="brave.spring.beans.TracingFactoryBean">
